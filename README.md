@@ -4,4 +4,4 @@
 
 mvn spring-boot:run
 
-open [in browser after built](localhost:9090/hiDocker)
+open localhost:9090/hiDocker
