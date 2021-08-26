@@ -12,7 +12,7 @@
 	<artifactId>dockerreactivehello</artifactId>
 	<version>1.0.0-RELEASE</version>
 	<name>dockerreactivehello</name>
-	<description>Docker's Spring Reactive Web's hello message</description>
+	<description>Docker's & Spring Reactive Web's hello message</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
