@@ -1,6 +1,6 @@
 # docker-reactive-hello
 
-# How it works
+# To Run application
 
 mvn spring-boot:run
 
