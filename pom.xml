@@ -42,5 +42,28 @@
 			</plugin>
 		</plugins>
 	</build>
-
+<repositories>
+	<repository>
+		<id>harinvb</id>
+		<url>https://pkgs.dev.azure.com/harinvb/_packaging/harinvb/maven/v1</url>
+		<releases>
+		  <enabled>true</enabled>
+		</releases>
+		<snapshots>
+		  <enabled>true</enabled>
+		</snapshots>
+	  </repository>
+</repositories>
+<distributionManagement>
+	<repository>
+		<id>harinvb</id>
+		<url>https://pkgs.dev.azure.com/harinvb/_packaging/harinvb/maven/v1</url>
+		<releases>
+		  <enabled>true</enabled>
+		</releases>
+		<snapshots>
+		  <enabled>true</enabled>
+		</snapshots>
+	  </repository>
+</distributionManagement>
 </project>
