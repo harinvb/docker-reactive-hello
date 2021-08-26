@@ -1,0 +1,36 @@
+Log file created at: 2021/08/25 13:22:45
+Running on machine: hari-Inspiron-7573
+Binary: Built with gc go1.16.4 for linux/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0825 13:22:45.960701   18737 out.go:286] Setting OutFile to fd 1 ...
+I0825 13:22:45.960786   18737 out.go:338] isatty.IsTerminal(1) = true
+I0825 13:22:45.960790   18737 out.go:299] Setting ErrFile to fd 2...
+I0825 13:22:45.960804   18737 out.go:338] isatty.IsTerminal(2) = true
+I0825 13:22:45.960935   18737 root.go:312] Updating PATH: .minikube/bin
+W0825 13:22:45.961034   18737 root.go:291] Error reading config file at .minikube/config/config.json: open .minikube/config/config.json: no such file or directory
+I0825 13:22:45.961217   18737 out.go:293] Setting JSON to false
+I0825 13:22:45.983867   18737 start.go:111] hostinfo: {"hostname":"hari-Inspiron-7573","uptime":12370,"bootTime":1629865595,"procs":325,"os":"linux","platform":"ubuntu","platformFamily":"debian","platformVersion":"21.04","kernelVersion":"5.11.0-31-generic","kernelArch":"x86_64","virtualizationSystem":"kvm","virtualizationRole":"host","hostId":"9d2c273b-fb12-4733-a3e6-4cc794dd9617"}
+I0825 13:22:45.983937   18737 start.go:121] virtualization: kvm host
+I0825 13:22:45.987597   18737 out.go:165] 😄  minikube v1.22.0 on Ubuntu 21.04
+I0825 13:22:45.987778   18737 notify.go:169] Checking for updates...
+I0825 13:22:45.987820   18737 driver.go:335] Setting default libvirt URI to qemu:///system
+I0825 13:22:45.987837   18737 global.go:111] Querying for installed drivers using PATH=.minikube/bin:
+I0825 13:22:45.987860   18737 global.go:119] virtualbox default: true priority: 6, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:unable to find VBoxManage in $PATH Reason: Fix:Install VirtualBox Doc:https://minikube.sigs.k8s.io/docs/reference/drivers/virtualbox/}
+I0825 13:22:45.987905   18737 global.go:119] vmware default: true priority: 7, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "docker-machine-driver-vmware": executable file not found in $PATH Reason: Fix:Install docker-machine-driver-vmware Doc:https://minikube.sigs.k8s.io/docs/reference/drivers/vmware/}
+I0825 13:22:45.988376   18737 global.go:119] docker default: true priority: 9, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "docker": executable file not found in $PATH Reason: Fix:Install Docker Doc:https://minikube.sigs.k8s.io/docs/drivers/docker/}
+I0825 13:22:45.988407   18737 global.go:119] kvm2 default: true priority: 8, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "virsh": executable file not found in $PATH Reason: Fix:Install libvirt Doc:https://minikube.sigs.k8s.io/docs/reference/drivers/kvm2/}
+I0825 13:22:45.988422   18737 global.go:119] none default: false priority: 4, state: {Installed:false Healthy:false Running:true NeedsImprovement:false Error:exec: "iptables": executable file not found in $PATH Reason: Fix:iptables must be installed Doc:https://minikube.sigs.k8s.io/docs/reference/drivers/none/}
+I0825 13:22:45.988440   18737 global.go:119] podman default: true priority: 7, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "podman": executable file not found in $PATH Reason: Fix:Install Podman Doc:https://minikube.sigs.k8s.io/docs/drivers/podman/}
+I0825 13:22:45.988447   18737 global.go:119] ssh default: false priority: 4, state: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc:}
+I0825 13:22:45.988458   18737 driver.go:270] not recommending "ssh" due to default: false
+I0825 13:22:45.988470   18737 driver.go:305] Picked: 
+I0825 13:22:45.988475   18737 driver.go:306] Alternatives: [ssh]
+I0825 13:22:45.988481   18737 driver.go:307] Rejects: [vmware docker kvm2 none podman virtualbox]
+I0825 13:22:45.990239   18737 out.go:165] 👎  Unable to pick a default driver. Here is what was considered, in preference order:
+I0825 13:22:45.991708   18737 out.go:165]     ▪ docker: Not installed: exec: "docker": executable file not found in $PATH
+I0825 13:22:45.993416   18737 out.go:165]     ▪ kvm2: Not installed: exec: "virsh": executable file not found in $PATH
+I0825 13:22:45.994886   18737 out.go:165]     ▪ vmware: Not installed: exec: "docker-machine-driver-vmware": executable file not found in $PATH
+I0825 13:22:45.996502   18737 out.go:165]     ▪ podman: Not installed: exec: "podman": executable file not found in $PATH
+I0825 13:22:45.998041   18737 out.go:165]     ▪ virtualbox: Not installed: unable to find VBoxManage in $PATH
+I0825 13:22:45.999445   18737 out.go:165] 
+W0825 13:22:45.999583   18737 out.go:230] ❌  Exiting due to DRV_NOT_DETECTED: No possible driver was detected. Try specifying --driver, or see https://minikube.sigs.k8s.io/docs/start/
