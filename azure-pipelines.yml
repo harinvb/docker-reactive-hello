@@ -23,6 +23,6 @@ steps:
     goals: 'package'
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '$(Pipeline.Workspace)/**/*.jar'
+    targetPath: '$(Pipeline.Workspace)'
     artifact: 'app.jar'
     publishLocation: 'pipeline'
