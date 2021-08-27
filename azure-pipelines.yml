@@ -22,9 +22,14 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(Pipeline.Workspace)/s'
+    Contents: '**/*.jar'
+    TargetFolder: '$(Pipeline.Workspace)/s/artifacts'
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '$(Pipeline.Workspace)/s/target/(*.jar)'
+    targetPath: '$(Pipeline.Workspace)/s/artifacts'
     publishLocation: 'pipeline'
 - task: PowerShell@2
   inputs:
