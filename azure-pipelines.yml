@@ -24,7 +24,7 @@ steps:
 
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '$(Pipeline.Workspace)/target/*.jar'
+    targetPath: '$(Pipeline.Workspace)/target'
     artifact: 'Application'
     publishLocation: 'pipeline'
 - task: PowerShell@2
